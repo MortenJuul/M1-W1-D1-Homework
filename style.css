@@ -168,7 +168,7 @@ table {
     margin: 4em auto 0 auto;
 }
 caption {
-    border: #852b1b;
+    background: #852b1b;
     height: 40px;
     color: #fff;
     font-size: 1.3em;
@@ -199,4 +199,91 @@ td:first-child {
     background: #bde1ff;
 }
 
-/* Contact form */
+/* Contact */
+
+.contactinfo {
+    line-height: 1.5em;
+}
+.contactinfo span:first-of-type {
+    font-weight: bold;
+}
+
+form {
+    width: auto;
+    padding-top: 2em;
+}
+
+fieldset {
+    border: solid 2px;
+}
+
+fieldset legend {
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+fieldset label{
+    display: block;
+    line-height: 1.5em;
+    font-weight: bold;
+    padding-top: 10px;
+}
+
+fieldset input[type="text"], fieldset input[type="email"], fieldset textarea{
+    width: 400px;
+    font-size: 1em;
+    border: solid 2px;
+}
+
+fieldset .radios label, fieldset .selectmenu label {
+    display: inline-flex;
+    padding-right: 1em;
+}
+
+fieldset select {
+    width: 150px;
+    text-align-last: center;
+    border: solid 2px;
+}
+
+fieldset textarea {
+    min-height: 100px;
+}
+
+fieldset .randomcode {
+    width: 400px;
+    display: block;
+    margin: 1em 0;
+}
+
+fieldset .randomcode input {
+    width: auto;
+    float: right;
+    display: inline;
+}
+
+#codes {
+    display: inline;
+    font-size: 1em;
+    font-weight: 600;
+    background-color: #55acee;
+    width: fit-content;
+    padding: 0.2em 0.4em;
+}
+
+fieldset .button {
+    padding-left: 307px;
+}
+
+fieldset input[type="submit"] {
+    margin: 10px 0;
+    width: 100px;
+    /* background: #4977D1; */
+    color: #fff;
+    padding: 0.5em 1em 0.5em 1em;
+}
+
+/* fieldset input[type="submit"]:focus, fieldset input[type="submit"]:hover{
+    background: #bde1ff;
+    color: #4977D1 ;
+} */
