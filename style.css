@@ -6,16 +6,21 @@ header {
 }
 
 #home header {
-    background: no-repeat lightgrey url(images/cliff_ocean.jpg);
-    background-size: 1500px;
+    background: no-repeat lightgray url(Images/cliff_ocean.jpg);
+    background-size: 100%;
+    background-position: center;
 }
+
 #activities header {
-    background: no-repeat lightgrey url(images/runfly.jpg);
-    background-size: 1500px;
+    background: no-repeat lightgray url(Images/runfly.jpg);
+    background-size: 100%;
+    background-position: center;
 }
+
 #contact header {
-    background: no-repeat lightgrey url(images/cliff_rock.jpg);
-    background-size: 1500px;
+    background: no-repeat lightgray url(Images/cliff_rock.jpg);
+    background-size: 100%;
+    background-position: center;
 }
 
 .main-header {
@@ -32,15 +37,16 @@ header {
     margin: 0 2em 0 0;
     float: left;
 }
-/* Navigation */
+
+/* Main menu */
 .main-menu {
-    margin-left: 227px;
+    margin-left: 225px;
     font-weight: 400;
 }
 
 .main-menu ul li {
     list-style-type: none;
-    display: inline;
+    display: block;
     float: left;
     padding-left: 25px;
     padding-right: 25px;
@@ -50,7 +56,7 @@ header {
     font-size: 14px;
 }
 
-.main-menu ul li a {
+.main-menu ul li {
     text-decoration: none;
     color: #888;
 }
@@ -58,26 +64,35 @@ header {
 .main-menu ul li a:hover {
     color: #9ed034;
 }
+
 .main-menu ul li.active {
-    background: #9ed034;
+    background:  #9ed034;
     border: none;
 }
+
 .main-menu ul li.active a {
     color: #fff;
 }
 
+/* Live clock */
+#timeofday {
+    background: linear-gradient(0deg, rgba(251, 215, 139, 1) 0%, rgba(118, 213, 245, 1) 100%);
+    padding: 15px 0;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif; 
+    color: #3a3a3a;
+}
+#clock {
+    color: #125688;
+}
+
 /* Main */
 main {
-    padding: 4em;
     font-family: Arial, Helvetica, sans-serif;
+    margin: 3em;
 }
-
-main h2 {
+h1, h2 {
     color: #9ed034;
-}
-
-main h3 {
-    font-weight: bold;
 }
 
 /* Partners */
@@ -101,7 +116,7 @@ section #partners .partner {
     border-radius: 50%;
 }
 
-section #partners .partner img {
+section #partners .partner img{
     width: 90px;
     height: 90px;
 }
@@ -113,26 +128,29 @@ footer {
     padding-bottom: 1em;
     background-color: #ecfab8;
 }
+
 footer #nondisclaimer .copy {
     padding: 3.5em 3.5em 3.5em 13em;
     float: left;
     font-size: 0.9em;
 }
+
 footer #nondisclaimer .social {
     padding: 2.5em;
-    float: right;
     margin-right: 9.25em;
+    float: right;    
 }
 
 footer #disclaimer {
     clear: both;
 }
 
-footer #disclaimer p {
+footer #disclaimer p{
     font-size: 0.85em;
     text-align: center;
 }
 
+/* Social Icons */
 footer #nondisclaimer .social .fa {
     padding: 15px;
     font-size: 15px;
@@ -152,13 +170,13 @@ footer #nondisclaimer .social .fa-facebook {
     color: white;
 }
 
-footer #nondisclaimer .social .fa-twitter {
-    background: #55acee;
+footer #nondisclaimer .social .fa-instagram {
+    background: #125688;
     color: white;
 }
 
-footer #nondisclaimer .social .fa-instagram {
-    background: #125688;
+footer #nondisclaimer .social .fa-twitter {
+    background: #55acee;
     color: white;
 }
 
@@ -167,6 +185,7 @@ table {
     width: 1000px;
     margin: 4em auto 0 auto;
 }
+
 caption {
     background: #852b1b;
     height: 40px;
@@ -175,28 +194,37 @@ caption {
     font-weight: bold;
     padding-top: 1em;
 }
+
 thead {
     background: #bde1ff;
 }
+
 tbody {
     background: #eeffe6;
     text-align: center;
 }
+
 th, td {
     width: 225px;
     height: 75px;
     vertical-align: middle;
     border: solid 1px #852b1b;
 }
+
 th:first-child {
     width: 125px;
     height: 50px;
-    background: #4977d1;
+    background: #4977D1;
     color: #fff;
 }
+
 td:first-child {
     font-weight: bold;
     background: #bde1ff;
+}
+
+.cell-highlight {
+   background-color: #9ed034;
 }
 
 /* Contact */
